@@ -209,4 +209,4 @@ int main() {
  <img width="818" height="388" alt="Screenshot 2025-09-08 132154" src="https://github.com/user-attachments/assets/ab412029-16bd-4e6b-bcb4-f58424c21205" />
 
  ## RESULT:
-The program implementing the PlayFair cipher for encryption and decryption has been successfully executed, and the results have been verified
+The program implementing the PlayFair cipher for encryption and decryption has been successfully executed, and the results have been verified.
