@@ -61,7 +61,6 @@ int removeSpaces(char* plain, int ps) {
     plain[count] = '\0';
     return count;
 }
-
 void generateKeyTable(char key[], int ks, char keyT[5][5]) {
     int i, j, k;
     int dicty[26] = {0};
@@ -95,7 +94,6 @@ void generateKeyTable(char key[], int ks, char keyT[5][5]) {
         }
     }
 }
-
 void search(char keyT[5][5], char a, char b, int arr[]) {
     int i, j;
     if (a == 'j') a = 'i';
@@ -112,11 +110,9 @@ void search(char keyT[5][5], char a, char b, int arr[]) {
         }
     }
 }
-
 int mod5(int a) {
     return (a % 5 + 5) % 5;
 }
-
 int prepare(char str[], int ptrs) {
     if (ptrs % 2 != 0) {
         str[ptrs++] = 'z';
@@ -124,7 +120,6 @@ int prepare(char str[], int ptrs) {
     }
     return ptrs;
 }
-
 void encrypt(char str[], char keyT[5][5], int ps) {
     int i, a[4];
     for (i = 0; i < ps; i += 2) {
@@ -141,7 +136,6 @@ void encrypt(char str[], char keyT[5][5], int ps) {
         }
     }
 }
-
 void decrypt(char str[], char keyT[5][5], int ps) {
     int i, a[4];
     for (i = 0; i < ps; i += 2) {
@@ -162,7 +156,6 @@ void decrypt(char str[], char keyT[5][5], int ps) {
     else
         str[ps] = '\0';
 }
-
 void encryptByPlayfairCipher(char str[], char key[]) {
     int ps, ks;
     char keyT[5][5];
@@ -176,7 +169,6 @@ void encryptByPlayfairCipher(char str[], char key[]) {
     generateKeyTable(key, ks, keyT);
     encrypt(str, keyT, ps);
 }
-
 void decryptByPlayfairCipher(char str[], char key[]) {
     int ps, ks;
     char keyT[5][5];
@@ -189,7 +181,6 @@ void decryptByPlayfairCipher(char str[], char key[]) {
     generateKeyTable(key, ks, keyT);
     decrypt(str, keyT, ps);
 }
-
 int main() {
     char str[SIZE], key[SIZE];
     printf("Simulating Playfair Cipher\n");
@@ -203,10 +194,9 @@ int main() {
     printf("Decrypted text: %s\n", str);
     return 0;
 }
-
 ```
- ## OUTPUT :
- <img width="818" height="388" alt="Screenshot 2025-09-08 132154" src="https://github.com/user-attachments/assets/ab412029-16bd-4e6b-bcb4-f58424c21205" />
+## OUTPUT :
+<img width="818" height="388" alt="Screenshot 2025-09-08 132154" src="https://github.com/user-attachments/assets/ab412029-16bd-4e6b-bcb4-f58424c21205" />
 
- ## RESULT:
+## RESULT:
 The program implementing the PlayFair cipher for encryption and decryption has been successfully executed, and the results have been verified.
